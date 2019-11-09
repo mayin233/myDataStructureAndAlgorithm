@@ -2,6 +2,11 @@ package leetcode;
 
 /**
  * Created by my on 2019/11/9.
+ *  除暴力法外
+ * 还可以参考另外2种算法
+ * 1. juggling
+ * 2. stl rotate
+
  */
 public class Question189 {
     public static void main(String[] args) {
@@ -10,7 +15,7 @@ public class Question189 {
         new Question189().rotate(nums,k);
     }
     /**
-     * 暴力法，双重循环
+     * 1.暴力法，双重循环
      * @param nums
      * @param k
      */
@@ -28,6 +33,8 @@ public class Question189 {
         for (int num : nums)
         System.out.println(num);
     }
+
+
 }
 
 
