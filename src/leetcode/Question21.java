@@ -2,7 +2,7 @@ package leetcode;
 
 /**
  * Created by my on 2019/11/10.
- * 需要巩固练习迭代法和递归的实现
+ * 需要巩固练习迭代法和递归的实现链表拼接
  */
 public class Question21 {
     public class ListNode {
