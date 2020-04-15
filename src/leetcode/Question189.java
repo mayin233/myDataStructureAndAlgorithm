@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Arrays;
+
 /**
  * Created by my on 2019/11/9.
  *  除暴力法外
@@ -32,6 +34,34 @@ public class Question189 {
         }
         for (int num : nums)
         System.out.println(num);
+    }
+
+    /**
+     * 反转法
+     * @param nums
+     * @param k
+     */
+    public  void rotate2(int[] nums,int k){
+        // m 是分界点
+        int m = k % nums.length;
+        // 1.反转整个数组
+        reverseArray(nums,0,nums.length-1);
+
+        // 2.反转m之前半部分数组
+        reverseArray(nums,0,m-1);
+        // 2.反转m往后的部分数组
+        reverseArray(nums,m,nums.length-1);
+        System.out.println(Arrays.toString(nums));
+    }
+
+    private void reverseArray(int[] nums,int start, int end) {
+        while(start<end) {
+            int temp = nums[end];
+            nums[end] = nums[start];
+            nums[start] = temp;
+            start++;
+            end--;
+        }
     }
 
 
