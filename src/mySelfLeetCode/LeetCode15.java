@@ -34,9 +34,9 @@ public class LeetCode15 {
                 }
             }
         }
-      List list = new ArrayList<List<Integer>>();
+        List list = new ArrayList<List<Integer>>();
         list.addAll(result);
-    return  list;
+        return  list;
     }
 
 }
